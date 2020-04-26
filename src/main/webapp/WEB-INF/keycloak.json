@@ -3,8 +3,11 @@
   "auth-server-url": "http://adem1.com/auth/",
   "ssl-required": "none",
   "resource": "keycloaktest",
-  "public-client": true,
   "verify-token-audience": true,
+  "credentials": {
+    "secret": "7ccc7acf-fc8d-4200-a59f-c5345e61d49b"
+  },
   "use-resource-role-mappings": true,
-  "confidential-port": 0
+  "confidential-port": 0,
+  "policy-enforcer": {}
 }
