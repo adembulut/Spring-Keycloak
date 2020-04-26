@@ -1,0 +1,8 @@
+{
+  "realm": "master",
+  "auth-server-url": "http://adem1.com/auth",
+  "resource": "keycloaktest",
+  "use-resource-role-mappings": false,
+  "ssl-required": "EXTERNAL",
+  "public-client": true
+}

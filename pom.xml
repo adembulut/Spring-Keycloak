@@ -113,6 +113,13 @@
             <version>${slf4j.version}</version>
         </dependency>
         <!--Log4j-->
+
+
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-spring-security-adapter</artifactId>
+            <version>8.0.2</version>
+        </dependency>
     </dependencies>
 
     <build>
