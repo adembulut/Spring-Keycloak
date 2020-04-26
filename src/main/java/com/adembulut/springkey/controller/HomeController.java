@@ -13,9 +13,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HomeController {
 
-    @GetMapping("/")
+    @GetMapping(value = {"/","","/index","/index/"})
     public String getIndex(ModelMap map) {
         map.addAttribute("home", "This is HomePage");
         return "shared/index";
     }
+
+    @GetMapping("/adem")
+    public String getIndex1(ModelMap map) {
+        map.addAttribute("home", "This is HomePage");
+        return "shared/index";
+    }
+    @GetMapping("/login")
+    public String getLogin(ModelMap map) {
+        map.addAttribute("home", "This is loginPage");
+        return "login";
+    }
+
+
 }
