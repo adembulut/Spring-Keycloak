@@ -9,13 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author adem.bulut  on  26.04.2020
  * @project springkey
  */
-@RequestMapping("/")
+@RequestMapping("/admin")
 @Controller
-public class HomeController {
-
-    @GetMapping("/")
+public class AdminController {
+    @GetMapping(value = {"", "/", "/index", "index"})
     public String getIndex(ModelMap map) {
-        map.addAttribute("home", "This is HomePage");
-        return "shared/index";
+        map.addAttribute("pageInfo", "This page is Administration Page!");
+        return "/admin/index";
     }
 }

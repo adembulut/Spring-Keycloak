@@ -1,6 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <html>
 <head>
     <title>Spring Keycloak Integration</title>
@@ -18,13 +17,18 @@
                         <a class="navbar-brand" href="#">Spring Keycloak Integration</a>
                     </div>
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="${pageContext.request.contextPath}/admin/">Admin Page</a></li>
+                        <li><a href="${pageContext.request.contextPath}/">Home</a></li>
+                        <li class="active"><a href="${pageContext.request.contextPath}/admin/">Admin Page</a></li>
                         <li><a href="${pageContext.request.contextPath}/user/">User Page</a></li>
                     </ul>
                 </div>
             </nav>
-            ${home}
+            ${pageInfo}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a href="${pageContext.request.contextPath}/">Back</a>
         </div>
     </div>
 </div>
